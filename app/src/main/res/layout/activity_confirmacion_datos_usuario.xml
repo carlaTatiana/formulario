@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    tools:context=".ConfirmacionDatosUsuario">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Datos"
+        android:gravity="center"
+        android:paddingTop="@dimen/titulo_paddingTop"
+        android:typeface="monospace"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="@dimen/titulo_layout_marginBottom"
+        />
+
+
+    <TextView
+        android:id = "@+id/tvNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titulo"
+        android:layout_alignStart="@+id/titulo"
+        android:layout_below="@+id/titulo"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id = "@+id/tvFechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNombreUsuario"
+        android:layout_alignStart="@+id/tvNombreUsuario"
+        android:layout_below="@+id/tvNombreUsuario"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id = "@+id/tvTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFechaNacimiento"
+        android:layout_alignStart="@+id/tvFechaNacimiento"
+        android:layout_below="@+id/tvFechaNacimiento"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id = "@+id/tvCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTelefono"
+        android:layout_alignStart="@+id/tvTelefono"
+        android:layout_below="@+id/tvTelefono"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id = "@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCorreo"
+        android:layout_alignStart="@+id/tvCorreo"
+        android:layout_below="@+id/tvCorreo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/BotonEditar"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etDescripcionUsuario"
+        android:layout_marginTop="60dp"
+        android:text="Editar"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+
+
+</LinearLayout>
